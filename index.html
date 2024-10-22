@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-advancedjs-hw-04</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DvPDDfy5.css">
-  </head>
-  <body>
 
-    <form class="search-form">
-      <input type="text" name="search" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
-    
-    <span class="loader"></span>
-    
-    <ul class="gallery"></ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixabay Image Search</title>
+  <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+</head>
 
-  </body>
+<body>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Search for images..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="gallery"></div>
+
+  <button id="load-more" style="display: none;">Load more</button>
+  <div id="loading" style="display: none;">Loading...</div>
+
+</body>
+
 </html>
+
